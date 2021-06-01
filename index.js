@@ -50,16 +50,16 @@ const MyMath = {
    a: 5,
    b: 2,
    sum: function() {
-      console.log(MyMath.a + MyMath.b)
+      console.log(this.a + this.b)
    },
    multiplication: function() {
-      console.log(MyMath.a * MyMath.b)
+      console.log(this.a * this.b)
    },
    division: function() {
-      console.log(MyMath.a / MyMath.b)
+      console.log(this.a / this.b)
    },
    subtraction: function() {
-      console.log(MyMath.a - MyMath.b)
+      console.log(this.a - this.b)
    },
 }
 MyMath.sum();
