@@ -15,7 +15,7 @@
 //    firstName: 'Ivan',
 //    secondName: 'Ivanov',
 //    showData: function() {
-//       console.log( person.firstName + ' ' + person.secondName)
+//       console.log( this.firstName + ' ' + this.secondName)
 //    },
 // } 
 // person.showData();
@@ -24,7 +24,7 @@
 //    firstName: 'Petro',
 //    secondName: 'Petriv',
 //    showData: function() {
-//       console.log( newPerson.firstName + ' ' + newPerson.secondName)
+//       console.log( this.firstName + ' ' + this.secondName)
 //    },
 // } 
 // newPerson.showData();
@@ -46,23 +46,23 @@
 // MyMath.subtraction() – має повернути 5 - 2 = 3
 
 
-const MyMath = {
-   a: 5,
-   b: 2,
-   sum: function() {
-      console.log(this.a + this.b)
-   },
-   multiplication: function() {
-      console.log(this.a * this.b)
-   },
-   division: function() {
-      console.log(this.a / this.b)
-   },
-   subtraction: function() {
-      console.log(this.a - this.b)
-   },
-}
-MyMath.sum();
-MyMath.multiplication();
-MyMath.division();
-MyMath.subtraction();
+// const MyMath = {
+//    a: 5,
+//    b: 2,
+//    sum: function() {
+//       console.log(this.a + this.b)
+//    },
+//    multiplication: function() {
+//       console.log(this.a * this.b)
+//    },
+//    division: function() {
+//       console.log(this.a / this.b)
+//    },
+//    subtraction: function() {
+//       console.log(this.a - this.b)
+//    },
+// }
+// MyMath.sum();
+// MyMath.multiplication();
+// MyMath.division();
+// MyMath.subtraction();
